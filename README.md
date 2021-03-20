@@ -5,6 +5,7 @@ Sistemas de Banco de Dados 1 e 2 da Universidade de Brasília (UNB).
 
 ## Populador de tabelas (tuple generator)
 
+![tuple generator example](assets/example.gif)
 Script criado com o intuito de automatizar a tarefa de popular uma tabela com
 dados de alta repetitividade como nome, CPF, cnpj.
 
