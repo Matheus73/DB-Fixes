@@ -42,6 +42,10 @@ if __name__ == '__main__':
                 tmp.append(functions.generate_random_value(num))
             elif atr == 'placa':
                 tmp.append(functions.generate_car_license())
+            elif atr == 'chassi':
+                tmp.append(functions.generate_chassi())
+            elif atr == 'cor':
+                tmp.append(functions.generate_color())
         lines.append(tmp)
 
 

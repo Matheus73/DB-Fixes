@@ -1,5 +1,62 @@
 import datetime
 import random
+
+list_letters_upper = [
+        'A',
+        'B',
+        'C',
+        'D',
+        'E',
+        'F',
+        'G',
+        'H',
+        'I',
+        'J',
+        'K',
+        'L',
+        'M',
+        'N',
+        'O',
+        'P',
+        'Q',
+        'R',
+        'S',
+        'T',
+        'U',
+        'V',
+        'X',
+        'Y',
+        'Z',
+        ]
+
+list_letters_lower = [
+        'a',
+        'b',
+        'c',
+        'd',
+        'e',
+        'f',
+        'g',
+        'h',
+        'i',
+        'j',
+        'k',
+        'l',
+        'm',
+        'n',
+        'o',
+        'p',
+        'q',
+        'r',
+        's',
+        't',
+        'u',
+        'v',
+        'x',
+        'y',
+        'z',
+        ]
+
 def generate_cpf():
     cpf = [random.randint(0, 9) for x in range(9)]
 
@@ -80,31 +137,66 @@ def generate_random_value(tam):
     return random.randint(10**(tam-1), 10**(tam))
 
 def generate_car_license():
-    list_letters = [
-            'A',
-            'B',
-            'C',
-            'D',
-            'E',
-            'F',
-            'G',
-            'H',
-            'I',
-            'J',
-            'K',
-            'L',
-            'M',
-            'N',
-            'O',
-            'P',
-            'Q',
-            'R',
-            'S',
-            'T',
-            'U',
-            'V',
-            'X',
-            'Y',
-            'Z',
+    return random.choice(list_letters_upper) + random.choice(list_letters_upper) + random.choice(list_letters_upper) + str(random.randint(10**3,10**(4)))
+
+def generate_chassi():
+    chassi = ''
+    for i in range(3):
+        flag = random.randint(0,2)
+        if flag == 0:
+            chassi += random.choice(list_letters_lower)
+        elif flag == 1:
+            chassi += random.choice(list_letters_upper)
+        else:
+            chassi += str(random.randint(0,9))
+
+    chassi += ' '
+
+    for i in range(6):
+        flag = random.randint(0,2)
+        if flag == 0:
+            chassi += random.choice(list_letters_lower)
+        elif flag == 1:
+            chassi += random.choice(list_letters_upper)
+        else:
+            chassi += str(random.randint(0,9))
+
+    chassi += ' '
+
+
+    for i in range(2):
+        flag = random.randint(0,2)
+        if flag == 0:
+            chassi += random.choice(list_letters_lower)
+        elif flag == 1:
+            chassi += random.choice(list_letters_upper)
+        else:
+            chassi += str(random.randint(0,9))
+
+    chassi += ' '
+
+    for i in range(6):
+        flag = random.randint(0,2)
+        if flag == 0:
+            chassi += random.choice(list_letters_lower)
+        elif flag == 1:
+            chassi += random.choice(list_letters_upper)
+        else:
+            chassi += str(random.randint(0,9))
+
+    return chassi
+
+def generate_color():
+    colors = [
+            "verde",
+            "amarelo",
+            "rosa",
+            "preto",
+            "prata",
+            "vermelho",
+            "vinho",
+            "azul",
+            "branco",
+            "bege"
             ]
-    return random.choice(list_letters) + random.choice(list_letters) + random.choice(list_letters) + str(random.randint(10**3,10**(4)))
+    return random.choice(colors)
