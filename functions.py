@@ -77,7 +77,7 @@ def generate_city():
     return tmp
 
 def generate_random_value(tam):
-    return random.randint(10**tam-1, 10**(tam))
+    return random.randint(10**(tam-1), 10**(tam))
 
 def generate_car_license():
     list_letters = [
