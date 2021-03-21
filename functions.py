@@ -200,3 +200,11 @@ def generate_color():
             "bege"
             ]
     return random.choice(colors)
+
+def generate_phone():
+    phone = f'+55 ({random.randint(10,99)}) 9{random.randint(10**3,10**4 -1)}-{random.randint(10**3,10**4 -1)}'
+    return phone
+
+def generate_cep():
+    cep = f"{random.randint(10**4,10**5 -1)}-{random.randint(10**2,10**3 -1)}"
+    return cep

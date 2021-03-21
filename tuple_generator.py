@@ -29,8 +29,6 @@ if __name__ == '__main__':
                 tmp.append(functions.generate_name())
             elif atr == 'cnpj':
                 tmp.append(functions.generate_cnpj())
-            elif atr == 'cnpj':
-                tmp.append(functions.generate_cnpj())
             elif atr == 'data':
                 tmp.append(functions.generate_date())
             elif atr == 'estado-cidade':
@@ -46,6 +44,10 @@ if __name__ == '__main__':
                 tmp.append(functions.generate_chassi())
             elif atr == 'cor':
                 tmp.append(functions.generate_color())
+            elif atr == 'telefone':
+                tmp.append(functions.generate_phone())
+            elif atr == 'cep':
+                tmp.append(functions.generate_cep())
         lines.append(tmp)
 
 
