@@ -1,9 +1,30 @@
 import functions
 
+menu = """
+        Opções de atributos:
++---------------+-------------------------------------------------------+
+| opcoes        | definicao                                             |
++---------------+-------------------------------------------------------+
+| cpf           | Gera um cpf aleatorio                                 |
+| nome          | Gera um nome de pessoa aleatorio                      |
+| cnpj          | Gera um CNPJ aleatorio                                |
+| data          | Gera uma data aleatoria de 1980 a 2015                |
+| estado-cidade | Gera dois atributos sendo eles um estado e uma cidade |
+| random(n)     | Gera um inteiro com N algarismos                      |
+| placa         | Gera uma placa de veiculo aleatoriamente              |
+| chassi        | Gera um chassi de um veiculo aleatoriamente           |
+| cor           | Gera uma cor                                          |
+| telefone      | Gera um numero de telefone com area e DDD             |
+| cep           | Gera um CEP aleatorio                                 |
++---------------+-------------------------------------------------------+
+"""
+
 if __name__ == '__main__':
     table = input("Qual o nome da tabela? ")
 
     n = int(input("Quantas tuplas gostaria de adicionar na tabela? "))
+
+    print(menu)
 
     atributes = input("Quais atributos gostaria de add? (separados por espaco) ").split()
 
