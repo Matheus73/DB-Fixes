@@ -47,3 +47,11 @@ O script solicita apenas o script gerado pelo BR Modelo e produz como saída tod
 sejam elas **Primary keys** ou **Foreign keys**.
 
 
+## Gerador do delete (apaga)
+
+Script com o intuito de gerar o script de apaga pedido pelo professor
+
+### Funcionamento
+
+O script solicita apenas o script de criação (fisico) para que ele gere o arquivo apaga e 
+mostre no terminal.
