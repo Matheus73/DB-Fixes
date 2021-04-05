@@ -79,6 +79,7 @@ def generate_list(file:str):
             
     return  tables
 
-generate_list('sample.sql')
+name = input("Digite o nome do arquivo gerado pelo BRMODELO: ")
+generate_list(name)
 
 
