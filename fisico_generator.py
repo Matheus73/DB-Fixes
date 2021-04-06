@@ -71,7 +71,7 @@ def generate_list(file:str):
 
 
     for key in tables:
-        print(f"-- {key}")
+        # print(f"-- {key}")
         for i in tables[key]:
             print(i)
         print('\n')
